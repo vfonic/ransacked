@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  timeout: 5000
+  pool: 5
+
+development:
+  <<: *default
+  database: ransacked_dev
+
+test:
+  <<: *default
+  database: ransacked_test
