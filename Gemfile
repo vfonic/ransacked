@@ -46,5 +46,5 @@ group :development do
   gem 'spring'
 end
 
-gem 'ransack'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'pg'
