@@ -7,7 +7,7 @@ module Sacked
       product_property = create(:product_property, property: property)
 
       product_properties = Property.first.product_properties
-                                   .ransack(property_name_cont: 'asd').result
+                                   .ransack(property_name_cont: 'asd')
       binding.pry
     end
   end

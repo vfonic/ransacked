@@ -1,5 +1,5 @@
 class Property < ActiveRecord::Base
-  has_many :product_properties, dependent: :delete_all, inverse_of: :property
+  has_many :product_properties
 
   def self.ransackable_attributes(auth_object = nil)
     ['name']
